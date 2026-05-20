@@ -2,7 +2,7 @@
 
 Aplicación de escritorio para Windows que recopila la Biblia, los sermones del Hermano William Marrion Branham y herramientas de estudio bíblico (interlineal, atlas, medidas) en una única infobase organizada por carpetas, con búsqueda y referencias cruzadas.
 
-> Este repositorio **sólo aloja los instaladores** (`.exe`) de cada versión publicada. El código fuente y los datos no están aquí.
+> Este repositorio **sólo aloja los instaladores** (`.exe`) de cada versión publicada.
 
 ---
 
@@ -28,8 +28,6 @@ Al abrir la app por primera vez, la pantalla de carga importa los datos base a l
 - Imágenes y referencias del atlas
 - Medidas y pesos bíblicos
 
-Tras importar todo, los JSON precargados se eliminan automáticamente del directorio de instalación (los datos ya están en la base de datos).
-
 ---
 
 ## Interfaz: las 4 secciones principales
@@ -48,17 +46,15 @@ La barra lateral izquierda tiene 4 botones:
 ## Sección Biblioteca
 
 ### Árbol de contenido
-El panel izquierdo muestra carpetas y libros en árbol. Las carpetas raíz traducidas automáticamente al idioma de la UI (Mensajes/Messages/Mensagens…). El backend mantiene el nombre canónico interno.
+El panel izquierdo muestra carpetas y libros en árbol. Las carpetas raíz traducidas automáticamente al idioma de la UI (Mensajes/Messages/Mensagens…).
 
 - **Click** en un libro: lo abre en una pestaña.
-- **Click derecho** en una carpeta/libro (modo admin): renombrar, mover, eliminar.
-- **Drag & drop**: arrastrar libros entre carpetas.
 
 ### Pestañas de lectura
-Cada libro abierto vive en una pestaña arriba del editor. Cierra con la X.
+Cada libro abierto vive en una pestaña arriba del editor. Cierra con la X o Click-Derecho "Cerrar Pestaña".
 
 ### Buscador global
-Barra superior. Busca en el texto plano de todos los libros (índice FTS5 de SQLite). Toggles:
+Barra superior. Busca en el texto plano de todos los libros. Toggles:
 - **Aa**: distinguir mayúsculas/minúsculas
 - **W**: palabra exacta
 
@@ -69,13 +65,12 @@ Los resultados se resaltan en amarillo dentro de cada libro al abrirlo.
 Cuando abres un libro, dispones de la barra superior con:
 
 - **Tamaño de letra `−` / `+`**: aumenta o disminuye el tamaño del texto. Rango 70 % – 200 % en pasos de 10 %. El tamaño elegido se persiste y se aplica a todos los libros.
-- **🔍 Buscar en el libro**: buscador local con resaltado. Ctrl+F también lo abre.
+- **🔍 Buscar en el libro**: buscador local con resaltado.
 - **📝 Notas**: panel lateral con tus notas por párrafo.
 - **🔖 Marcadores**: panel lateral con tus marcadores.
-- **✏️ Editar** (sólo modo admin).
 
 #### Selección de párrafos
-Para mensajes/sermones, al hacer click en el margen izquierdo de un párrafo numerado se selecciona ese párrafo. Selección múltiple con Shift. Aparece una barra flotante para copiar el texto seleccionado con referencias.
+Para mensajes/sermones, al hacer click en el margen izquierdo de un párrafo numerado se selecciona ese párrafo. Aparece una barra flotante para copiar el texto seleccionado con referencias.
 
 #### Funciones específicas de capítulos bíblicos
 Cuando abres un capítulo de la Biblia:
@@ -102,9 +97,8 @@ Tres pestañas: **Biblias**, **Atlas**, **Mensajes**. Verifica conexión a inter
 ### Pestaña Atlas
 
 - Si nunca lo descargaste, botón **"Instalar atlas"**.
-- Descarga ~700 mapas e imágenes a `%APPDATA%\LVC\Infobase\imagenes\`.
+- Descarga ~700 mapas e imágenes.
 - El progreso se muestra con barra y contador.
-- Las imágenes quedan ordenadas naturalmente (1, 2, 3, … 10, 11, no 1, 10, 11, 2, 3).
 - Una vez instalado, "Reinstalar" baja la versión más reciente.
 
 ### Pestaña Mensajes
@@ -119,10 +113,7 @@ Dos sub-pestañas:
 #### ☁ Catálogo Messagehub
 - **89 idiomas** disponibles desde messagehub.info.
 - Texto plano (sin negrita/cursiva).
-- Las referencias bíblicas internas vienen incluidas.
 - Estructura: `Mensajes / Messagehub / IDIOMA / AÑO / "47-1102 El Ángel Y Su Comisión"`.
-
-**Las descargas sobreviven cambios de pestaña o de pantalla.** Si descargas el catálogo completo de español (1183 sermones, ~15 minutos) y te vas a Biblioteca, la descarga sigue. Al volver verás el progreso real, no falsamente "completado".
 
 **El botón `↻` recarga el catálogo** invalidando la caché local (TTL 3 días) — útil cuando hay nuevos mensajes en el repo.
 
@@ -172,29 +163,8 @@ Mapas bíblicos navegables.
 
 - **🌓 Tema** — claro / oscuro.
 - **🌐 Idioma de la app** — Español, English, Português, Français, Română, Italiano.
-- **👤 Admin** — modo admin (requiere clave). Habilita edición, renombrar, eliminar.
 
 El idioma de la UI se guarda y se aplica al reiniciar.
-
----
-
-## Datos persistentes (¿dónde se guarda qué?)
-
-Todo en `%APPDATA%\LVC\Infobase\`:
-
-```
-%APPDATA%\LVC\Infobase\
-├── db\biblioteca.db                  ← BD principal (libros, notas, marcadores, interlineal)
-├── imagenes\                         ← atlas (descargado bajo demanda)
-├── atlas_installed                   ← marker de atlas instalado
-├── bible_catalog_v2_cache.json       ← catálogo Biblias (TTL 3 días)
-├── downloads_cache_hub_langs.json    ← catálogo idiomas Messagehub
-├── downloads_cache_hub_sermons_*.json ← catálogo sermones por idioma
-├── bookmarks_*.json                  ← marcadores
-└── app.log                           ← log de la app
-```
-
-**Al desinstalar**, esta carpeta NO se borra. Tus datos están a salvo.
 
 ---
 
@@ -202,7 +172,6 @@ Todo en `%APPDATA%\LVC\Infobase\`:
 
 | Atajo | Acción |
 |---|---|
-| Ctrl + S | Guardar (modo edición) |
 | Ctrl + F | Buscar dentro del libro abierto |
 | Esc | Cerrar buscador local / cancelar edición |
 | Ctrl + Shift + F | Buscador global (en barra superior) |
@@ -211,7 +180,6 @@ Todo en `%APPDATA%\LVC\Infobase\`:
 
 ## Solución de problemas
 
-- **El icono del instalador sale genérico** → cache de Windows. Reinicia Explorer o ejecuta `ie4uinit.exe -show`.
 - **No detecta actualizaciones** → revisa conexión a internet. Espera al check siguiente (cooldown 6h) o reinicia la app.
 - **Búsqueda no encuentra nada en biblias descargadas** → el índice FTS se reconstruye en background. Espera unos segundos tras importar.
 - **Mensaje "carpeta vacía" en Atlas** → entra a Descargas → Atlas → Instalar. Las imágenes se descargan de internet.
