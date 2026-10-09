@@ -4,11 +4,11 @@
 
 Disponible para **Windows, Android, Linux y macOS**, en español, inglés, portugués, francés, italiano, rumano, chino y árabe.
 
-> **The Message — William Marrion Branham sermons, Bible and study tools in one free app.** Infobase LVC lets you read and search the sermons of Brother Branham (89 languages via messagehub.info), the Bible with Strong's interlinear, dictionaries and a Bible atlas. Download the installer for Windows, Android, Linux or macOS from the [Releases](../../releases/latest) page.
+> **The Message — William Marrion Branham sermons, Bible and study tools in one free app.** Infobase LVC lets you read and search the sermons of Brother Branham (89 languages), the Bible with Strong's interlinear, dictionaries and a Bible atlas. Download the installer for Windows, Android, Linux or macOS from the [Releases](../../releases/latest) page.
 
 > Este repositorio **solo aloja los instaladores** de cada versión publicada.
 
-**Palabras clave:** infobase, LVC, La Voz de Consumación, El Mensaje, The Message, William Marrion Branham, William Branham, sermones, mensajes, Biblia, Bible, interlineal, Strong, atlas bíblico, messagehub.
+**Palabras clave:** infobase, LVC, La Voz de Consumación, El Mensaje, The Message, William Marrion Branham, William Branham, sermones, mensajes, Biblia, Bible, interlineal, Strong, atlas bíblico, descargar mensajes, audio.
 
 ---
 
@@ -121,10 +121,10 @@ Dos sub-pestañas:
 - Catálogo limitado a los idiomas que LVC ha procesado.
 - Estructura de carpetas: `Mensajes / ES / 1965 / "65-0418M Eventos modernos aclarados por la profecía"`.
 
-#### ☁ Catálogo Messagehub
-- **89 idiomas** disponibles desde messagehub.info.
+#### ☁ Catálogo online
+- **89 idiomas** disponibles para descargar.
 - Texto plano (sin negrita/cursiva).
-- Estructura: `Mensajes / Messagehub / IDIOMA / AÑO / "47-1102 El Ángel Y Su Comisión"`.
+- Estructura: `Mensajes / Catálogo / IDIOMA / AÑO / "47-1102 El Ángel Y Su Comisión"`.
 
 **El botón `↻` recarga el catálogo** invalidando la caché local (TTL 3 días) — útil cuando hay nuevos mensajes en el repo.
 
@@ -208,4 +208,4 @@ La app comprueba este repositorio cada 6 horas. Puedes descartar una versión co
 
 ---
 
-*Copyright © LVC. Esta app no es producto oficial de Voice of God Recordings ni de messagehub.info. Los textos del Hermano Branham se utilizan bajo el espíritu de difusión libre del Mensaje.*
+*Copyright © LVC. Proyecto independiente. Los textos del Hermano Branham se utilizan bajo el espíritu de difusión libre del Mensaje.*
