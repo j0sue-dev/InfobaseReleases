@@ -1,20 +1,31 @@
-# Infobase El Mensaje LVC
+# Infobase El Mensaje LVC — La Voz de Consumación
 
-Aplicación de escritorio para Windows que recopila la Biblia, los sermones del Hermano William Marrion Branham y herramientas de estudio bíblico (interlineal, atlas, medidas) en una única infobase organizada por carpetas, con búsqueda y referencias cruzadas.
+**Infobase LVC** es la biblioteca digital gratuita de **El Mensaje** (*The Message*) del hermano **William Marrion Branham**, creada por **LVC (La Voz de Consumación)**. Reúne en una sola aplicación los sermones del Hermano Branham, la Biblia en varios idiomas y herramientas de estudio bíblico: interlineal hebreo y griego con números Strong, diccionarios, atlas bíblico, medidas y pesos, notas, marcadores y búsqueda global.
 
-> Este repositorio **sólo aloja los instaladores** (`.exe`) de cada versión publicada.
+Disponible para **Windows, Android, Linux y macOS**, en español, inglés, portugués, francés, italiano, rumano, chino y árabe.
+
+> **The Message — William Marrion Branham sermons, Bible and study tools in one free app.** Infobase LVC lets you read and search the sermons of Brother Branham (89 languages via messagehub.info), the Bible with Strong's interlinear, dictionaries and a Bible atlas. Download the installer for Windows, Android, Linux or macOS from the [Releases](../../releases/latest) page.
+
+> Este repositorio **solo aloja los instaladores** de cada versión publicada.
+
+**Palabras clave:** infobase, LVC, La Voz de Consumación, El Mensaje, The Message, William Marrion Branham, William Branham, sermones, mensajes, Biblia, Bible, interlineal, Strong, atlas bíblico, messagehub.
 
 ---
 
 ## Descargar la última versión
 
-1. Ve a la pestaña **[Releases](../../releases)** de este repositorio.
-2. Descarga el archivo `InforbaseLVC-Installer.exe` del release más reciente.
-3. Ejecútalo. Cuando arranque, te pedirá que elijas el idioma del instalador (Español / English).
-4. Sigue el asistente. Por defecto se instala en `%LOCALAPPDATA%\Programs\LVC\Infobase\`.
-5. Al terminar, se abre la aplicación automáticamente.
+Ve a **[Releases → última versión](../../releases/latest)** y descarga el archivo de tu sistema:
 
-**Actualizaciones automáticas**: la app comprueba cada 6 horas si hay versión nueva en este repositorio. Cuando aparece la versión nueva, verás un banner en la parte superior con el botón "Actualizar". Un click descarga e instala automáticamente; tus datos personales se conservan.
+| Sistema | Archivo |
+|---|---|
+| Windows | `infobaselvc_vX.Y.Z.exe` |
+| Android | `infobaselvc_vX.Y.Z.apk` |
+| Linux | `infobaselvc_vX.Y.Z_linux-x64.tar.gz` (+ firma `.asc`) |
+| macOS | `.zip` (sin firmar) |
+
+**Windows:** ejecuta el instalador, elige el idioma (Español / English) y sigue el asistente. Se instala en `%LOCALAPPDATA%\Programs\LVC\Infobase\`.
+
+**Actualizaciones automáticas:** la app comprueba cada 6 horas si hay una versión nueva en este repositorio. Cuando aparece, verás un banner con el botón "Actualizar"; tus datos personales se conservan.
 
 ---
 
