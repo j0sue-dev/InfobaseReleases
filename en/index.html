@@ -56,6 +56,10 @@ h2{font:600 .95rem var(--font-ui);letter-spacing:.06em;text-transform:uppercase;
 .index .fmt{display:block;font:400 .9rem var(--font-ui);color:var(--muted)}
 .index a{font:600 .95rem var(--font-ui);color:var(--accent);white-space:nowrap;text-decoration:underline;text-underline-offset:.3em;text-decoration-thickness:1px}
 .index a:hover{text-decoration-thickness:2px}
+.index li.multi{grid-template-columns:minmax(0,1fr)}
+.abis{list-style:none;margin:0;padding:0;padding-inline-start:var(--s2);border-inline-start:2px solid var(--rule)}
+.abis li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s1) var(--s3);align-items:baseline;padding:.35rem 0;border:0}
+.abis .fmt{font-size:.95rem}
 .meta{font:400 .9rem var(--font-ui);color:var(--muted);margin:0 0 var(--s4)}
 .meta a{color:var(--muted);white-space:nowrap}
 .langs{font-size:1.1rem}
@@ -72,11 +76,11 @@ footer a{color:var(--muted)}
 <h1>The Message, the Bible and the tools to study them, in one library.</h1>
 <p class="lede">Infobase LVC is the digital library of La Voz de Consumación for reading and studying The Message of Brother William Marrion Branham alongside the Bible. It is free, works offline once your content is downloaded, and installs on your computer or your phone.</p>
 <h2>Download</h2>
-<ul class="index"><li><span><span class="os">Windows</span><span class="fmt"><bdi dir="ltr">.exe</bdi> installer</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">Download ↓</a></li><li><span><span class="os">Android</span><span class="fmt"><bdi dir="ltr">.apk</bdi> file</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and" rel="noopener">Download ↓</a></li><li><span><span class="os">Linux</span><span class="fmt"><bdi dir="ltr">.tar.gz</bdi> package</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">Download ↓</a></li><li><span><span class="os">macOS</span><span class="fmt"><bdi dir="ltr">.zip</bdi> file, unsigned</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">Download ↓</a></li></ul>
+<ul class="index"><li><span><span class="os">Windows</span><span class="fmt"><bdi dir="ltr">.exe</bdi> installer</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">Download ↓</a></li><li class="multi"><span><span class="os">Android</span><span class="fmt"><bdi dir="ltr">.apk</bdi> file, pick the one for your phone</span></span><ul class="abis"><li><span class="fmt">Most phones</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and64" rel="noopener"><bdi dir="ltr">arm64-v8a</bdi> ↓</a></li><li><span class="fmt">Older 32-bit phones</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and32" rel="noopener"><bdi dir="ltr">armeabi-v7a</bdi> ↓</a></li><li><span class="fmt">Emulators and some Chromebooks</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="andx64" rel="noopener"><bdi dir="ltr">x86_64</bdi> ↓</a></li></ul></li><li><span><span class="os">Linux</span><span class="fmt"><bdi dir="ltr">.tar.gz</bdi> package</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">Download ↓</a></li><li><span><span class="os">macOS</span><span class="fmt"><bdi dir="ltr">.zip</bdi> file, unsigned</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">Download ↓</a></li></ul>
 <p class="meta">Latest version: <span id="ver">—</span> · <a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest">See all versions</a></p>
 <p><span class="run">Read.</span> Open several books in tabs and keep your place in each one. Search the whole library at once, highlight, write notes on any paragraph, save bookmarks and park passages in “Read later” to come back to them.</p>
 <p><span class="run">Study.</span> Open any verse with its Hebrew and Greek interlinear, Strong's numbers, morphology and the Strong and Hitchcock dictionaries. Compare translations side by side, follow cross-references, and browse the Bible atlas, timelines, family tree, and biblical weights and measures.</p>
-<p><span class="run">Download content.</span> Install the Bibles in the language you need, the messages curated by LVC with their original formatting, a catalogue of messages in 89 languages, and the Compendia. You can also listen to the audio of the messages.</p>
+<p><span class="run">Download content.</span> Install the Bibles in the language you need, the messages curated by LVC with their original formatting, a catalogue of messages in 89 languages, and the Compendia. You can also listen to the audio of the messages. And add classic Bible commentaries to read alongside each chapter.</p>
 <p><span class="run">Make it yours.</span> Your notes, bookmarks and settings stay on your device, with backup. The app updates itself, has light and dark themes with colour palettes to choose from, and adapts to the text size you prefer.</p>
 <h2>App languages</h2>
 <p class="langs">The interface is available in eight languages: Español · English · Português · Français · Italiano · Română · 中文 · العربية.</p>
@@ -95,7 +99,7 @@ if(!bot){var s=read();if(!s){var L=navigator.languages||[navigator.language||'es
  if(s&&SUP.indexOf(s)>-1&&s!==cur){go(s)}}
 fetch('https://api.github.com/repos/j0sue-dev/InfobaseReleases/releases/latest').then(function(r){return r.ok?r.json():null}).then(function(j){
  if(!j)return;var v=document.getElementById('ver');if(v&&j.tag_name){v.textContent=j.tag_name}
- var map={win:/\.exe$/i,and:/\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
+ var map={win:/\.exe$/i,and64:/_arm64-v8a\.apk$/i,and32:/_armeabi-v7a\.apk$/i,andx64:/_x86_64\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
  (j.assets||[]).forEach(function(a){for(var k in map){if(map[k].test(a.name)){var el=document.querySelector('[data-dl="'+k+'"]');if(el)el.href=a.browser_download_url}}})
 }).catch(function(){});
 })();
