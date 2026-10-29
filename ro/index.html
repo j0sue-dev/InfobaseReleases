@@ -56,6 +56,10 @@ h2{font:600 .95rem var(--font-ui);letter-spacing:.06em;text-transform:uppercase;
 .index .fmt{display:block;font:400 .9rem var(--font-ui);color:var(--muted)}
 .index a{font:600 .95rem var(--font-ui);color:var(--accent);white-space:nowrap;text-decoration:underline;text-underline-offset:.3em;text-decoration-thickness:1px}
 .index a:hover{text-decoration-thickness:2px}
+.index li.multi{grid-template-columns:minmax(0,1fr)}
+.abis{list-style:none;margin:0;padding:0;padding-inline-start:var(--s2);border-inline-start:2px solid var(--rule)}
+.abis li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s1) var(--s3);align-items:baseline;padding:.35rem 0;border:0}
+.abis .fmt{font-size:.95rem}
 .meta{font:400 .9rem var(--font-ui);color:var(--muted);margin:0 0 var(--s4)}
 .meta a{color:var(--muted);white-space:nowrap}
 .langs{font-size:1.1rem}
@@ -72,11 +76,11 @@ footer a{color:var(--muted)}
 <h1>Mesajul, Biblia și instrumentele pentru a le studia, într-o singură bibliotecă.</h1>
 <p class="lede">Infobase LVC este biblioteca digitală La Voz de Consumación pentru citirea și studiul Mesajului fratelui William Marrion Branham, alături de Biblie. Este gratuită, funcționează fără internet după ce ai descărcat conținutul și se instalează pe calculator sau pe telefon.</p>
 <h2>Descarcă</h2>
-<ul class="index"><li><span><span class="os">Windows</span><span class="fmt">Program de instalare <bdi dir="ltr">.exe</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">Descarcă ↓</a></li><li><span><span class="os">Android</span><span class="fmt">Fișier <bdi dir="ltr">.apk</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and" rel="noopener">Descarcă ↓</a></li><li><span><span class="os">Linux</span><span class="fmt">Pachet <bdi dir="ltr">.tar.gz</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">Descarcă ↓</a></li><li><span><span class="os">macOS</span><span class="fmt">Fișier <bdi dir="ltr">.zip</bdi>, nesemnat</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">Descarcă ↓</a></li></ul>
+<ul class="index"><li><span><span class="os">Windows</span><span class="fmt">Program de instalare <bdi dir="ltr">.exe</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">Descarcă ↓</a></li><li class="multi"><span><span class="os">Android</span><span class="fmt">Fișier <bdi dir="ltr">.apk</bdi>, alege-l pe cel pentru telefonul tău</span></span><ul class="abis"><li><span class="fmt">Majoritatea telefoanelor</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and64" rel="noopener"><bdi dir="ltr">arm64-v8a</bdi> ↓</a></li><li><span class="fmt">Telefoane vechi pe 32 de biți</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and32" rel="noopener"><bdi dir="ltr">armeabi-v7a</bdi> ↓</a></li><li><span class="fmt">Emulatoare și unele Chromebookuri</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="andx64" rel="noopener"><bdi dir="ltr">x86_64</bdi> ↓</a></li></ul></li><li><span><span class="os">Linux</span><span class="fmt">Pachet <bdi dir="ltr">.tar.gz</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">Descarcă ↓</a></li><li><span><span class="os">macOS</span><span class="fmt">Fișier <bdi dir="ltr">.zip</bdi>, nesemnat</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">Descarcă ↓</a></li></ul>
 <p class="meta">Ultima versiune: <span id="ver">—</span> · <a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest">Toate versiunile</a></p>
 <p><span class="run">Citește.</span> Deschide mai multe cărți în file și păstrează locul în fiecare. Caută în toată biblioteca deodată, subliniază, scrie note la orice paragraf, salvează semne de carte și lasă pasaje în „Citește mai târziu” ca să revii la ele.</p>
 <p><span class="run">Studiază.</span> Deschide fiecare verset cu interliniarul său ebraic și grecesc, numerele Strong, morfologia și dicționarele Strong și Hitchcock. Compară traducerile una lângă alta, urmărește trimiterile și consultă atlasul biblic, cronologiile, arborele genealogic și măsurile și greutățile din Biblie.</p>
-<p><span class="run">Descarcă conținut.</span> Instalează Bibliile în limba de care ai nevoie, mesajele îngrijite de LVC cu formatarea originală, un catalog de mesaje în 89 de limbi și Compendiile. Poți asculta și înregistrările audio ale mesajelor.</p>
+<p><span class="run">Descarcă conținut.</span> Instalează Bibliile în limba de care ai nevoie, mesajele îngrijite de LVC cu formatarea originală, un catalog de mesaje în 89 de limbi și Compendiile. Poți asculta și înregistrările audio ale mesajelor. Și adaugă comentarii biblice clasice pe care le citești lângă fiecare capitol.</p>
 <p><span class="run">Pe măsura ta.</span> Notele, semnele de carte și setările tale rămân pe dispozitiv, cu copie de siguranță. Aplicația se actualizează singură, are temă luminoasă și întunecată cu palete de culori la alegere și se adaptează mărimii de text preferate.</p>
 <h2>Limbile aplicației</h2>
 <p class="langs">Interfața este disponibilă în opt limbi: Español · English · Português · Français · Italiano · Română · 中文 · العربية.</p>
@@ -95,7 +99,7 @@ if(!bot){var s=read();if(!s){var L=navigator.languages||[navigator.language||'es
  if(s&&SUP.indexOf(s)>-1&&s!==cur){go(s)}}
 fetch('https://api.github.com/repos/j0sue-dev/InfobaseReleases/releases/latest').then(function(r){return r.ok?r.json():null}).then(function(j){
  if(!j)return;var v=document.getElementById('ver');if(v&&j.tag_name){v.textContent=j.tag_name}
- var map={win:/\.exe$/i,and:/\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
+ var map={win:/\.exe$/i,and64:/_arm64-v8a\.apk$/i,and32:/_armeabi-v7a\.apk$/i,andx64:/_x86_64\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
  (j.assets||[]).forEach(function(a){for(var k in map){if(map[k].test(a.name)){var el=document.querySelector('[data-dl="'+k+'"]');if(el)el.href=a.browser_download_url}}})
 }).catch(function(){});
 })();
