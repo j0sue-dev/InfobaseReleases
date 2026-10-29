@@ -56,6 +56,10 @@ h2{font:600 .95rem var(--font-ui);letter-spacing:.06em;text-transform:uppercase;
 .index .fmt{display:block;font:400 .9rem var(--font-ui);color:var(--muted)}
 .index a{font:600 .95rem var(--font-ui);color:var(--accent);white-space:nowrap;text-decoration:underline;text-underline-offset:.3em;text-decoration-thickness:1px}
 .index a:hover{text-decoration-thickness:2px}
+.index li.multi{grid-template-columns:minmax(0,1fr)}
+.abis{list-style:none;margin:0;padding:0;padding-inline-start:var(--s2);border-inline-start:2px solid var(--rule)}
+.abis li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s1) var(--s3);align-items:baseline;padding:.35rem 0;border:0}
+.abis .fmt{font-size:.95rem}
 .meta{font:400 .9rem var(--font-ui);color:var(--muted);margin:0 0 var(--s4)}
 .meta a{color:var(--muted);white-space:nowrap}
 .langs{font-size:1.1rem}
@@ -72,11 +76,11 @@ footer a{color:var(--muted)}
 <h1>信息、圣经与研读工具，尽在一座图书馆。</h1>
 <p class="lede">Infobase LVC 是 La Voz de Consumación 的数字图书馆，用来阅读和研读威廉·马利安·布兰罕弟兄的“信息”（The Message）以及圣经。它免费，内容下载后可离线使用，可安装在电脑或手机上。</p>
 <h2>下载</h2>
-<ul class="index"><li><span><span class="os">Windows</span><span class="fmt"><bdi dir="ltr">.exe</bdi> 安装程序</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">下载 ↓</a></li><li><span><span class="os">Android</span><span class="fmt"><bdi dir="ltr">.apk</bdi> 安装包</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and" rel="noopener">下载 ↓</a></li><li><span><span class="os">Linux</span><span class="fmt"><bdi dir="ltr">.tar.gz</bdi> 软件包</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">下载 ↓</a></li><li><span><span class="os">macOS</span><span class="fmt"><bdi dir="ltr">.zip</bdi> 文件，未签名</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">下载 ↓</a></li></ul>
+<ul class="index"><li><span><span class="os">Windows</span><span class="fmt"><bdi dir="ltr">.exe</bdi> 安装程序</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">下载 ↓</a></li><li class="multi"><span><span class="os">Android</span><span class="fmt"><bdi dir="ltr">.apk</bdi> 安装包，请选择适合你手机的版本</span></span><ul class="abis"><li><span class="fmt">大多数手机</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and64" rel="noopener"><bdi dir="ltr">arm64-v8a</bdi> ↓</a></li><li><span class="fmt">较旧的 32 位手机</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and32" rel="noopener"><bdi dir="ltr">armeabi-v7a</bdi> ↓</a></li><li><span class="fmt">模拟器和部分 Chromebook</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="andx64" rel="noopener"><bdi dir="ltr">x86_64</bdi> ↓</a></li></ul></li><li><span><span class="os">Linux</span><span class="fmt"><bdi dir="ltr">.tar.gz</bdi> 软件包</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">下载 ↓</a></li><li><span><span class="os">macOS</span><span class="fmt"><bdi dir="ltr">.zip</bdi> 文件，未签名</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">下载 ↓</a></li></ul>
 <p class="meta">最新版本: <span id="ver">—</span> · <a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest">查看所有版本</a></p>
 <p><span class="run">阅读。</span> 用标签页同时打开多本书，每本都记住阅读位置。一次搜索整个图书馆，可划线标注，在任意段落写笔记，保存书签，并把段落放进“稍后阅读”以便日后回来。</p>
 <p><span class="run">研读。</span> 每节经文都可打开希伯来文和希腊文逐字对照，查看斯特朗编号、词形分析，以及斯特朗词典和希区柯克词典。并排比较不同译本，沿着交叉引用查阅，并使用圣经地图集、时间线、家谱以及圣经度量衡。</p>
-<p><span class="run">下载内容。</span> 安装你所需语言的圣经、由 LVC 整理并保留原有格式的信息、涵盖 89 种语言的信息目录，以及汇编（Compendios）。你还可以收听信息的音频。</p>
+<p><span class="run">下载内容。</span> 安装你所需语言的圣经、由 LVC 整理并保留原有格式的信息、涵盖 89 种语言的信息目录，以及汇编（Compendios）。你还可以收听信息的音频。还可以添加经典圣经注释，与每一章并排阅读。</p>
 <p><span class="run">随你所用。</span> 笔记、书签和设置保存在你的设备上，并可备份。应用会自动更新，提供浅色和深色主题及可选配色，并可按你喜欢的字号调整。</p>
 <h2>应用语言</h2>
 <p class="langs">界面提供八种语言： Español · English · Português · Français · Italiano · Română · 中文 · العربية.</p>
@@ -95,7 +99,7 @@ if(!bot){var s=read();if(!s){var L=navigator.languages||[navigator.language||'es
  if(s&&SUP.indexOf(s)>-1&&s!==cur){go(s)}}
 fetch('https://api.github.com/repos/j0sue-dev/InfobaseReleases/releases/latest').then(function(r){return r.ok?r.json():null}).then(function(j){
  if(!j)return;var v=document.getElementById('ver');if(v&&j.tag_name){v.textContent=j.tag_name}
- var map={win:/\.exe$/i,and:/\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
+ var map={win:/\.exe$/i,and64:/_arm64-v8a\.apk$/i,and32:/_armeabi-v7a\.apk$/i,andx64:/_x86_64\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
  (j.assets||[]).forEach(function(a){for(var k in map){if(map[k].test(a.name)){var el=document.querySelector('[data-dl="'+k+'"]');if(el)el.href=a.browser_download_url}}})
 }).catch(function(){});
 })();
