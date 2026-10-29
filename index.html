@@ -56,6 +56,10 @@ h2{font:600 .95rem var(--font-ui);letter-spacing:.06em;text-transform:uppercase;
 .index .fmt{display:block;font:400 .9rem var(--font-ui);color:var(--muted)}
 .index a{font:600 .95rem var(--font-ui);color:var(--accent);white-space:nowrap;text-decoration:underline;text-underline-offset:.3em;text-decoration-thickness:1px}
 .index a:hover{text-decoration-thickness:2px}
+.index li.multi{grid-template-columns:minmax(0,1fr)}
+.abis{list-style:none;margin:0;padding:0;padding-inline-start:var(--s2);border-inline-start:2px solid var(--rule)}
+.abis li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s1) var(--s3);align-items:baseline;padding:.35rem 0;border:0}
+.abis .fmt{font-size:.95rem}
 .meta{font:400 .9rem var(--font-ui);color:var(--muted);margin:0 0 var(--s4)}
 .meta a{color:var(--muted);white-space:nowrap}
 .langs{font-size:1.1rem}
@@ -72,11 +76,11 @@ footer a{color:var(--muted)}
 <h1>El Mensaje, la Biblia y las herramientas para estudiarlos, en una sola biblioteca.</h1>
 <p class="lede">Infobase LVC es la biblioteca digital de La Voz de Consumación para leer y estudiar El Mensaje (The Message) del hermano William Marrion Branham junto a la Biblia. Es gratuita, funciona sin conexión una vez descargado el contenido y se instala en tu computadora o en tu teléfono.</p>
 <h2>Descargar</h2>
-<ul class="index"><li><span><span class="os">Windows</span><span class="fmt">Instalador <bdi dir="ltr">.exe</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">Descargar ↓</a></li><li><span><span class="os">Android</span><span class="fmt">Archivo <bdi dir="ltr">.apk</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and" rel="noopener">Descargar ↓</a></li><li><span><span class="os">Linux</span><span class="fmt">Paquete <bdi dir="ltr">.tar.gz</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">Descargar ↓</a></li><li><span><span class="os">macOS</span><span class="fmt">Archivo <bdi dir="ltr">.zip</bdi>, sin firmar</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">Descargar ↓</a></li></ul>
+<ul class="index"><li><span><span class="os">Windows</span><span class="fmt">Instalador <bdi dir="ltr">.exe</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">Descargar ↓</a></li><li class="multi"><span><span class="os">Android</span><span class="fmt">Archivo <bdi dir="ltr">.apk</bdi>, elige el de tu teléfono</span></span><ul class="abis"><li><span class="fmt">La mayoría de teléfonos</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and64" rel="noopener"><bdi dir="ltr">arm64-v8a</bdi> ↓</a></li><li><span class="fmt">Teléfonos antiguos de 32 bits</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and32" rel="noopener"><bdi dir="ltr">armeabi-v7a</bdi> ↓</a></li><li><span class="fmt">Emuladores y algunos Chromebook</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="andx64" rel="noopener"><bdi dir="ltr">x86_64</bdi> ↓</a></li></ul></li><li><span><span class="os">Linux</span><span class="fmt">Paquete <bdi dir="ltr">.tar.gz</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">Descargar ↓</a></li><li><span><span class="os">macOS</span><span class="fmt">Archivo <bdi dir="ltr">.zip</bdi>, sin firmar</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">Descargar ↓</a></li></ul>
 <p class="meta">Última versión: <span id="ver">—</span> · <a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest">Ver todas las versiones</a></p>
 <p><span class="run">Leer.</span> Abre varios libros en pestañas y conserva tu lugar en cada uno. Busca en toda la biblioteca a la vez, subraya, escribe notas en cualquier párrafo, guarda marcadores y deja pasajes en «Ver más tarde» para retomarlos después.</p>
 <p><span class="run">Estudiar.</span> Abre cada versículo con su interlineal en hebreo y griego, números Strong, morfología y los diccionarios Strong y Hitchcock. Compara traducciones lado a lado, sigue las referencias cruzadas y consulta el atlas bíblico, las líneas del tiempo, el árbol genealógico y las medidas y pesos de la Biblia.</p>
-<p><span class="run">Descargar contenido.</span> Instala las Biblias del idioma que necesites, los mensajes cuidados por LVC con su formato original, un catálogo de mensajes en 89 idiomas y los Compendios. También puedes escuchar el audio de los mensajes.</p>
+<p><span class="run">Descargar contenido.</span> Instala las Biblias del idioma que necesites, los mensajes cuidados por LVC con su formato original, un catálogo de mensajes en 89 idiomas y los Compendios. También puedes escuchar el audio de los mensajes. Y añade comentarios bíblicos clásicos para leerlos junto a cada capítulo.</p>
 <p><span class="run">A tu manera.</span> Tus notas, marcadores y ajustes viven en tu dispositivo, con copia de seguridad. La aplicación se actualiza sola, tiene tema claro y oscuro con paletas de color a elegir, y se adapta al tamaño de letra que prefieras.</p>
 <h2>Idiomas de la aplicación</h2>
 <p class="langs">La interfaz está disponible en ocho idiomas: Español · English · Português · Français · Italiano · Română · 中文 · العربية.</p>
@@ -95,7 +99,7 @@ if(!bot){var s=read();if(!s){var L=navigator.languages||[navigator.language||'es
  if(s&&SUP.indexOf(s)>-1&&s!==cur){go(s)}}
 fetch('https://api.github.com/repos/j0sue-dev/InfobaseReleases/releases/latest').then(function(r){return r.ok?r.json():null}).then(function(j){
  if(!j)return;var v=document.getElementById('ver');if(v&&j.tag_name){v.textContent=j.tag_name}
- var map={win:/\.exe$/i,and:/\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
+ var map={win:/\.exe$/i,and64:/_arm64-v8a\.apk$/i,and32:/_armeabi-v7a\.apk$/i,andx64:/_x86_64\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
  (j.assets||[]).forEach(function(a){for(var k in map){if(map[k].test(a.name)){var el=document.querySelector('[data-dl="'+k+'"]');if(el)el.href=a.browser_download_url}}})
 }).catch(function(){});
 })();
