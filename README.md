@@ -36,17 +36,20 @@ La interfaz está disponible en **ocho idiomas**: español, inglés, portugués,
 - **Diccionarios** Strong (hebreo y griego) y Hitchcock de nombres bíblicos, con varias entradas abiertas a la vez.
 - **Biblia paralela** y **comparación de versiones** para ver varias traducciones lado a lado.
 - **Referencias cruzadas** entre versículos.
-- **Atlas bíblico** con mapas y líneas del tiempo, **árbol genealógico** y **medidas y pesos** de la Biblia.
+- **Comentarios bíblicos** clásicos en español e inglés (Matthew Henry, Jamieson-Fausset-Brown, John Wesley, Biblia de Ginebra, Scofield y otros) junto al capítulo que lees: cada nota indica su versículo y lleva a él.
+- **Atlas bíblico** por lugares, con galería de imágenes y mapa interactivo; milagros, armonía de los Evangelios, nombres de Dios y profetas.
+- **Cronología bíblica** interactiva, **árbol genealógico** con el significado de cada nombre y **medidas y pesos** de la Biblia.
 
 ### Descargar contenido
 - **Biblias** en distintos idiomas, instaladas en su propia carpeta.
 - **Mensajes** cuidados por LVC, con su formato original, y un **catálogo en 89 idiomas**.
 - **Compendios**: libros compilados y organizados por carpetas y capítulos.
+- **Comentarios bíblicos**, uno a uno, por idioma y autor.
 - **Audio** de los mensajes.
 - Opción de descargar solo con Wi-Fi y descargas que se reanudan si se interrumpen.
 
 ### Que sea tuya
-- Tus notas, marcadores y ajustes se guardan en tu dispositivo, con **copia de seguridad**.
+- Tus notas, marcadores y ajustes se guardan en tu dispositivo, cifrados y con **copia de seguridad**.
 - La aplicación **se actualiza sola**: te avisa cuando hay una versión nueva y la instala con un toque, conservando tus datos.
 
 ---
@@ -58,7 +61,7 @@ Entra en la sección **[Releases](../../releases/latest)**, elige tu sistema y d
 | Sistema | Archivo | Cómo instalarlo |
 |---|---|---|
 | **Windows** | Instalador `.exe` | Ábrelo, elige el idioma y sigue el asistente. |
-| **Android** | Archivo `.apk` | Ábrelo en el teléfono y permite la instalación desde esa fuente si Android lo pide. |
+| **Android** | Archivo `.apk` según tu teléfono: `arm64-v8a` (la mayoría), `armeabi-v7a` (teléfonos antiguos de 32 bits) o `x86_64` (emuladores y algunos Chromebook) | Si no sabes cuál, elige `arm64-v8a`. Ábrelo en el teléfono y permite la instalación desde esa fuente si Android lo pide. |
 | **Linux** | Paquete `.tar.gz` | Descomprímelo y ejecuta la aplicación. Incluye una firma `.asc` para comprobar que la descarga es auténtica. |
 | **macOS** | Archivo `.zip` | Descomprímelo y mueve la aplicación a Aplicaciones. Al no estar firmada, la primera vez ábrela con clic derecho → Abrir. |
 
@@ -80,9 +83,9 @@ Entra en la sección **[Releases](../../releases/latest)**, elige tu sistema y d
 
 ## English
 
-**Infobase LVC** is a free digital library by **La Voz de Consumación (LVC)** for reading and studying **The Message** of Brother **William Marrion Branham** alongside the **Bible**. It includes Strong's interlinear, dictionaries, a Bible atlas, notes, bookmarks, global search, and a catalogue of messages in 89 languages. It works offline once your content is downloaded, and the interface is available in Spanish, English, Portuguese, French, Italian, Romanian, Chinese and Arabic.
+**Infobase LVC** is a free digital library by **La Voz de Consumación (LVC)** for reading and studying **The Message** of Brother **William Marrion Branham** alongside the **Bible**. It includes Strong's interlinear, dictionaries, classic Bible commentaries, a Bible atlas, notes, bookmarks, global search, and a catalogue of messages in 89 languages. It works offline once your content is downloaded, and the interface is available in Spanish, English, Portuguese, French, Italian, Romanian, Chinese and Arabic.
 
-Available for **Windows, Android, Linux and macOS**. [Download the latest version](../../releases/latest).
+Available for **Windows, Android, Linux and macOS** (on Android, pick `arm64-v8a` unless your phone is an older 32-bit model). [Download the latest version](../../releases/latest).
 
 ---
 
