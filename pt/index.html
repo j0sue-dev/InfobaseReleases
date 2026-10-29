@@ -56,6 +56,10 @@ h2{font:600 .95rem var(--font-ui);letter-spacing:.06em;text-transform:uppercase;
 .index .fmt{display:block;font:400 .9rem var(--font-ui);color:var(--muted)}
 .index a{font:600 .95rem var(--font-ui);color:var(--accent);white-space:nowrap;text-decoration:underline;text-underline-offset:.3em;text-decoration-thickness:1px}
 .index a:hover{text-decoration-thickness:2px}
+.index li.multi{grid-template-columns:minmax(0,1fr)}
+.abis{list-style:none;margin:0;padding:0;padding-inline-start:var(--s2);border-inline-start:2px solid var(--rule)}
+.abis li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s1) var(--s3);align-items:baseline;padding:.35rem 0;border:0}
+.abis .fmt{font-size:.95rem}
 .meta{font:400 .9rem var(--font-ui);color:var(--muted);margin:0 0 var(--s4)}
 .meta a{color:var(--muted);white-space:nowrap}
 .langs{font-size:1.1rem}
@@ -72,11 +76,11 @@ footer a{color:var(--muted)}
 <h1>A Mensagem, a Bíblia e as ferramentas para estudá-las, numa só biblioteca.</h1>
 <p class="lede">O Infobase LVC é a biblioteca digital de La Voz de Consumación para ler e estudar a Mensagem do irmão William Marrion Branham junto com a Bíblia. É gratuito, funciona sem internet depois de baixar o conteúdo e se instala no seu computador ou no seu celular.</p>
 <h2>Baixar</h2>
-<ul class="index"><li><span><span class="os">Windows</span><span class="fmt">Instalador <bdi dir="ltr">.exe</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">Baixar ↓</a></li><li><span><span class="os">Android</span><span class="fmt">Arquivo <bdi dir="ltr">.apk</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and" rel="noopener">Baixar ↓</a></li><li><span><span class="os">Linux</span><span class="fmt">Pacote <bdi dir="ltr">.tar.gz</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">Baixar ↓</a></li><li><span><span class="os">macOS</span><span class="fmt">Arquivo <bdi dir="ltr">.zip</bdi>, sem assinatura</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">Baixar ↓</a></li></ul>
+<ul class="index"><li><span><span class="os">Windows</span><span class="fmt">Instalador <bdi dir="ltr">.exe</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">Baixar ↓</a></li><li class="multi"><span><span class="os">Android</span><span class="fmt">Arquivo <bdi dir="ltr">.apk</bdi>, escolha o do seu telefone</span></span><ul class="abis"><li><span class="fmt">A maioria dos telefones</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and64" rel="noopener"><bdi dir="ltr">arm64-v8a</bdi> ↓</a></li><li><span class="fmt">Telefones antigos de 32 bits</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and32" rel="noopener"><bdi dir="ltr">armeabi-v7a</bdi> ↓</a></li><li><span class="fmt">Emuladores e alguns Chromebooks</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="andx64" rel="noopener"><bdi dir="ltr">x86_64</bdi> ↓</a></li></ul></li><li><span><span class="os">Linux</span><span class="fmt">Pacote <bdi dir="ltr">.tar.gz</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">Baixar ↓</a></li><li><span><span class="os">macOS</span><span class="fmt">Arquivo <bdi dir="ltr">.zip</bdi>, sem assinatura</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">Baixar ↓</a></li></ul>
 <p class="meta">Última versão: <span id="ver">—</span> · <a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest">Ver todas as versões</a></p>
 <p><span class="run">Ler.</span> Abra vários livros em abas e mantenha o seu lugar em cada um. Pesquise em toda a biblioteca de uma vez, destaque trechos, escreva notas em qualquer parágrafo, guarde marcadores e deixe passagens em “Ver mais tarde” para retomá-las depois.</p>
 <p><span class="run">Estudar.</span> Abra cada versículo com o seu interlinear em hebraico e grego, números Strong, morfologia e os dicionários Strong e Hitchcock. Compare traduções lado a lado, siga as referências cruzadas e consulte o atlas bíblico, as linhas do tempo, a árvore genealógica e as medidas e pesos da Bíblia.</p>
-<p><span class="run">Baixar conteúdo.</span> Instale as Bíblias no idioma de que precisar, as mensagens cuidadas pela LVC com a formatação original, um catálogo de mensagens em 89 idiomas e os Compêndios. Você também pode ouvir o áudio das mensagens.</p>
+<p><span class="run">Baixar conteúdo.</span> Instale as Bíblias no idioma de que precisar, as mensagens cuidadas pela LVC com a formatação original, um catálogo de mensagens em 89 idiomas e os Compêndios. Você também pode ouvir o áudio das mensagens. E adicione comentários bíblicos clássicos para ler junto a cada capítulo.</p>
 <p><span class="run">Do seu jeito.</span> Suas notas, marcadores e ajustes ficam no seu dispositivo, com cópia de segurança. O aplicativo se atualiza sozinho, tem tema claro e escuro com paletas de cores à escolha e se adapta ao tamanho de letra que você preferir.</p>
 <h2>Idiomas do aplicativo</h2>
 <p class="langs">A interface está disponível em oito idiomas: Español · English · Português · Français · Italiano · Română · 中文 · العربية.</p>
@@ -95,7 +99,7 @@ if(!bot){var s=read();if(!s){var L=navigator.languages||[navigator.language||'es
  if(s&&SUP.indexOf(s)>-1&&s!==cur){go(s)}}
 fetch('https://api.github.com/repos/j0sue-dev/InfobaseReleases/releases/latest').then(function(r){return r.ok?r.json():null}).then(function(j){
  if(!j)return;var v=document.getElementById('ver');if(v&&j.tag_name){v.textContent=j.tag_name}
- var map={win:/\.exe$/i,and:/\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
+ var map={win:/\.exe$/i,and64:/_arm64-v8a\.apk$/i,and32:/_armeabi-v7a\.apk$/i,andx64:/_x86_64\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
  (j.assets||[]).forEach(function(a){for(var k in map){if(map[k].test(a.name)){var el=document.querySelector('[data-dl="'+k+'"]');if(el)el.href=a.browser_download_url}}})
 }).catch(function(){});
 })();
