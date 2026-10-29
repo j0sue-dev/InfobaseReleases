@@ -56,6 +56,10 @@ h2{font:600 .95rem var(--font-ui);letter-spacing:.06em;text-transform:uppercase;
 .index .fmt{display:block;font:400 .9rem var(--font-ui);color:var(--muted)}
 .index a{font:600 .95rem var(--font-ui);color:var(--accent);white-space:nowrap;text-decoration:underline;text-underline-offset:.3em;text-decoration-thickness:1px}
 .index a:hover{text-decoration-thickness:2px}
+.index li.multi{grid-template-columns:minmax(0,1fr)}
+.abis{list-style:none;margin:0;padding:0;padding-inline-start:var(--s2);border-inline-start:2px solid var(--rule)}
+.abis li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s1) var(--s3);align-items:baseline;padding:.35rem 0;border:0}
+.abis .fmt{font-size:.95rem}
 .meta{font:400 .9rem var(--font-ui);color:var(--muted);margin:0 0 var(--s4)}
 .meta a{color:var(--muted);white-space:nowrap}
 .langs{font-size:1.1rem}
@@ -72,11 +76,11 @@ footer a{color:var(--muted)}
 <h1>الرسالة والكتاب المقدس وأدوات دراستهما في مكتبة واحدة.</h1>
 <p class="lede">Infobase LVC هي المكتبة الرقمية لـ La Voz de Consumación لقراءة ودراسة رسالة الأخ ويليام ماريون برانهام إلى جانب الكتاب المقدس. وهي مجانية، وتعمل دون اتصال بالإنترنت بعد تنزيل المحتوى، وتُثبَّت على حاسوبك أو هاتفك.</p>
 <h2>التنزيل</h2>
-<ul class="index"><li><span><span class="os">Windows</span><span class="fmt">مثبّت <bdi dir="ltr">.exe</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">تنزيل ↓</a></li><li><span><span class="os">Android</span><span class="fmt">ملف <bdi dir="ltr">.apk</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and" rel="noopener">تنزيل ↓</a></li><li><span><span class="os">Linux</span><span class="fmt">حزمة <bdi dir="ltr">.tar.gz</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">تنزيل ↓</a></li><li><span><span class="os">macOS</span><span class="fmt">ملف <bdi dir="ltr">.zip</bdi> غير موقّع</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">تنزيل ↓</a></li></ul>
+<ul class="index"><li><span><span class="os">Windows</span><span class="fmt">مثبّت <bdi dir="ltr">.exe</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="win" rel="noopener">تنزيل ↓</a></li><li class="multi"><span><span class="os">Android</span><span class="fmt">ملف <bdi dir="ltr">.apk</bdi>، اختر المناسب لهاتفك</span></span><ul class="abis"><li><span class="fmt">معظم الهواتف</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and64" rel="noopener"><bdi dir="ltr">arm64-v8a</bdi> ↓</a></li><li><span class="fmt">الهواتف القديمة 32 بت</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="and32" rel="noopener"><bdi dir="ltr">armeabi-v7a</bdi> ↓</a></li><li><span class="fmt">المحاكيات وبعض أجهزة Chromebook</span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="andx64" rel="noopener"><bdi dir="ltr">x86_64</bdi> ↓</a></li></ul></li><li><span><span class="os">Linux</span><span class="fmt">حزمة <bdi dir="ltr">.tar.gz</bdi></span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="lin" rel="noopener">تنزيل ↓</a></li><li><span><span class="os">macOS</span><span class="fmt">ملف <bdi dir="ltr">.zip</bdi> غير موقّع</span></span><a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest" data-dl="mac" rel="noopener">تنزيل ↓</a></li></ul>
 <p class="meta">أحدث إصدار: <span id="ver">—</span> · <a href="https://github.com/j0sue-dev/InfobaseReleases/releases/latest">عرض كل الإصدارات</a></p>
 <p><span class="run">اقرأ.</span> افتح عدة كتب في تبويبات واحتفظ بمكانك في كل منها. ابحث في المكتبة كلها دفعة واحدة، وظلّل النص، واكتب ملاحظات على أي فقرة، واحفظ العلامات المرجعية، وضع المقاطع في «اقرأ لاحقًا» لتعود إليها.</p>
 <p><span class="run">ادرس.</span> افتح أي آية مع ترجمتها الحرفية بين السطور بالعبرية واليونانية، وأرقام سترونغ، والتحليل الصرفي، وقاموسَي سترونغ وهيتشكوك. قارن الترجمات جنبًا إلى جنب، وتتبّع الإحالات المرجعية، وتصفّح أطلس الكتاب المقدس والخطوط الزمنية وشجرة العائلة والمكاييل والأوزان الكتابية.</p>
-<p><span class="run">نزّل المحتوى.</span> ثبّت الكتب المقدسة باللغة التي تحتاجها، والرسائل التي اعتنت بها LVC بتنسيقها الأصلي، وفهرسًا للرسائل بـ 89 لغة، والمجموعات المختارة (Compendios). ويمكنك أيضًا الاستماع إلى تسجيلات الرسائل الصوتية.</p>
+<p><span class="run">نزّل المحتوى.</span> ثبّت الكتب المقدسة باللغة التي تحتاجها، والرسائل التي اعتنت بها LVC بتنسيقها الأصلي، وفهرسًا للرسائل بـ 89 لغة، والمجموعات المختارة (Compendios). ويمكنك أيضًا الاستماع إلى تسجيلات الرسائل الصوتية. ويمكنك إضافة تفاسير كتابية كلاسيكية لقراءتها بجانب كل أصحاح.</p>
 <p><span class="run">على طريقتك.</span> تبقى ملاحظاتك وعلاماتك وإعداداتك على جهازك مع نسخة احتياطية. يتحدّث التطبيق من تلقاء نفسه، ويوفّر سمة فاتحة وداكنة مع لوحات ألوان للاختيار، ويتكيّف مع حجم الخط الذي تفضّله.</p>
 <h2>لغات التطبيق</h2>
 <p class="langs">الواجهة متوفرة بثماني لغات: Español · English · Português · Français · Italiano · Română · 中文 · العربية.</p>
@@ -95,7 +99,7 @@ if(!bot){var s=read();if(!s){var L=navigator.languages||[navigator.language||'es
  if(s&&SUP.indexOf(s)>-1&&s!==cur){go(s)}}
 fetch('https://api.github.com/repos/j0sue-dev/InfobaseReleases/releases/latest').then(function(r){return r.ok?r.json():null}).then(function(j){
  if(!j)return;var v=document.getElementById('ver');if(v&&j.tag_name){v.textContent=j.tag_name}
- var map={win:/\.exe$/i,and:/\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
+ var map={win:/\.exe$/i,and64:/_arm64-v8a\.apk$/i,and32:/_armeabi-v7a\.apk$/i,andx64:/_x86_64\.apk$/i,lin:/\.tar\.gz$/i,mac:/\.zip$/i};
  (j.assets||[]).forEach(function(a){for(var k in map){if(map[k].test(a.name)){var el=document.querySelector('[data-dl="'+k+'"]');if(el)el.href=a.browser_download_url}}})
 }).catch(function(){});
 })();
