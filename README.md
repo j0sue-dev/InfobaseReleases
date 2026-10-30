@@ -36,7 +36,7 @@ La interfaz está disponible en **ocho idiomas**: español, inglés, portugués,
 - **Diccionarios** Strong (hebreo y griego) y Hitchcock de nombres bíblicos, con varias entradas abiertas a la vez.
 - **Biblia paralela** y **comparación de versiones** para ver varias traducciones lado a lado.
 - **Referencias cruzadas** entre versículos.
-- **Comentarios bíblicos** clásicos en español e inglés (Matthew Henry, Jamieson-Fausset-Brown, John Wesley, Biblia de Ginebra, Scofield y otros) junto al capítulo que lees: cada nota indica su versículo y lleva a él.
+- **Comentarios bíblicos** clásicos en español e inglés (Matthew Henry, Jamieson-Fausset-Brown, John Wesley, Biblia de Ginebra, Scofield y otros) junto al capítulo que lees, todos con el mismo formato: el capítulo empieza con un esquema de los puntos que trata, con un título breve, y cada punto lleva a su comentario y a su versículo.
 - **Atlas bíblico** por lugares, con galería de imágenes y mapa interactivo; milagros, armonía de los Evangelios, nombres de Dios y profetas.
 - **Cronología bíblica** interactiva, **árbol genealógico** con el significado de cada nombre y **medidas y pesos** de la Biblia.
 
@@ -83,7 +83,7 @@ Entra en la sección **[Releases](../../releases/latest)**, elige tu sistema y d
 
 ## English
 
-**Infobase LVC** is a free digital library by **La Voz de Consumación (LVC)** for reading and studying **The Message** of Brother **William Marrion Branham** alongside the **Bible**. It includes Strong's interlinear, dictionaries, classic Bible commentaries, a Bible atlas, notes, bookmarks, global search, and a catalogue of messages in 89 languages. It works offline once your content is downloaded, and the interface is available in Spanish, English, Portuguese, French, Italian, Romanian, Chinese and Arabic.
+**Infobase LVC** is a free digital library by **La Voz de Consumación (LVC)** for reading and studying **The Message** of Brother **William Marrion Branham** alongside the **Bible**. It includes Strong's interlinear, dictionaries, classic Bible commentaries (each chapter opens with an outline of its points that takes you to the comment and the verse), a Bible atlas, notes, bookmarks, global search, and a catalogue of messages in 89 languages. It works offline once your content is downloaded, and the interface is available in Spanish, English, Portuguese, French, Italian, Romanian, Chinese and Arabic.
 
 Available for **Windows, Android, Linux and macOS** (on Android, pick `arm64-v8a` unless your phone is an older 32-bit model). [Download the latest version](../../releases/latest).
 
