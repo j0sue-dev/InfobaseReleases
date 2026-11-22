@@ -51,6 +51,8 @@ La interfaz está disponible en **ocho idiomas**: español, inglés, portugués,
 ### Que sea tuya
 - Tus notas, marcadores y ajustes se guardan en tu dispositivo, cifrados y con **copia de seguridad**.
 - La aplicación **se actualiza sola**: te avisa cuando hay una versión nueva y la instala con un toque, conservando tus datos.
+- El contenido descargado ocupa **la mitad de espacio** que antes, sin perder nada.
+- Un botón **«Novedades»** muestra lo nuevo de cada versión.
 
 ---
 
