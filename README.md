@@ -11,6 +11,8 @@ Para Windows, Android, Linux y macOS.
 
 </div>
 
+![Recorrido por la aplicación · A tour of the app](infobase_recorrido.webp)
+
 ---
 
 ## ¿Qué es Infobase LVC?
